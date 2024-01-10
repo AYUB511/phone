@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="background"></div>
+<div class="phone">
+  <img src="http://www.play.pl/dane/produkty/phone/samsung/samsung-galaxy-grand-prime/TE-SS-G530F-PL1-GY/img/1.png" alt="phone">
+  <div class="screen-box">
+    <nav id="nav-bar">
+      <span>vodafone</span>
+      <ul>
+        <li><i class="fa fa-wifi"></i></li>
+        <li><i class="fa fa-signal"></i></li>
+        <li id="battery-num">98%</li>
+        <li><i class="fa fa-battery-full" id="battery"></i></li>
+      </ul>
+    </nav>
+    <div class="screen lock" id="lock-screen"></div>
+    <div class="screen password" id="password-screen">
+      <div class="clock" id="clock"></div>
+      <div class="date" id="date"></div>
+      <div class="lock-icons">
+        <span><i class="fa fa-camera"></i></span>
+        <span><i class="fa fa-phone"></i></span>
+      </div>
+    </div>
+    <div class="screen home" id="home">
+      <div class="main-info">
+        <div class="inner-clock" id="clock-two"></div>
+        <div class="inner-date" id="date-two"></div>
+        <div class="wether">
+          <i class="fa fa-sun-o"></i>
+          <i class="fa fa-cloud"></i>
+          <span>32 &#8451;</span>
+        </div>
+      </div>
+      <div class="apps">
+        <ul>
+          <li><img src="https://lh3.googleusercontent.com/ZZPdzvlpK9r_Df9C3M7j1rNRi7hhHRvPhlklJ3lfi5jk86Jd1s0Y5wcQ1QgbVaAP5Q=w300" alt="facebook"></li>
+          
+          <li><img src="https://lh5.ggpht.com/0VYAvZLR9YhosF-thqm8xl8EWsCfrEY_uk2og2f59K8IOx5TfPsXjFVwxaHVnUbuEjc=w300" alt="messanger"></li>
+
+          <li><img src="http://www.androidpolice.com/wp-content/uploads/2014/05/nexusae0_g2.png" alt="google plus"></li>
+                    
+          <li><img src="https://vignette1.wikia.nocookie.net/interstellar-pilot/images/2/21/Twitter_neue_ios_icon_by_theintenseplayer-d5fwil3.png/revision/latest?cb=20170418194100" alt="twitter"></li>
+        </ul>
+      </div>
+      
+      <div class="apps fixed-app">
+        <ul>
+          <li id="calls-btn"><img src="https://lh6.ggpht.com/ddIZ5ytwoIZQEtR0QcFQ1RCqu6zcw3Dq0HWsRVYttwtZ960c_n2vHbS11o8bRWxPLINw=w300" alt="calls"></li>
+          
+          <li id="message-btn"><img src="http://ai-i3.infcdn.net/icons_siandroid/jpg/300/2737/2737253.jpg" alt="message"></li>
+
+          <li id="apps-btn"><img src="https://lh3.googleusercontent.com/qBiPuYC-H23TGfVPUha1gEeito5PQolF_eJjR74gVnMJiE4FGCFNZDEM85D-Ed7YcJg=w170" alt="apps"></li>
+                    
+        </ul>
+      </div> 
+    </div>
+    
+    <div class="screen calls" id="calls">
+      <nav class="call-nav">
+        <input type="text" placeholder="search">
+        <ul>
+          <li><i class="fa fa-users"></i></li>
+          <li><i class="fa fa-plus"></i></li>
+          <li><i class="fa fa-ellipsis-v"></i></li>
+        </ul>
+      </nav>
+      <div class="user-phone">
+        <div>
+          <i class="fa fa-user"></i>
+          <span>mohamed khalid</span>
+          <span>+201202257119</span>
+        </div>
+        <div>
+          <i class="fa fa-user"></i>
+          <span>fares mahmoud</span>
+          <span>+201027554732</span>
+        </div>
+        <div>
+          <i class="fa fa-user"></i>
+          <span>osama mahamed</span>
+          <span>009904213576</span>
+        </div>
+        <div>
+          <i class="fa fa-user"></i>
+          <span>mohamed khalid</span>
+          <span>+201202257119</span>
+        </div>
+        <div>
+          <i class="fa fa-user"></i>
+          <span>fares mahmoud</span>
+          <span>+201027554732</span>
+        </div>
+        <div>
+          <i class="fa fa-user"></i>
+          <span>osama mahamed</span>
+          <span>009904213576</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="screen messages" id="messages">
+      <nav class="messages-nav">
+        <h3>messages</h3>
+        <ul>
+          <li><i class="fa fa-search"></i></li>
+          <li><i class="fa fa-ellipsis-v"></i></li>
+        </ul>
+      </nav>
+      <div class="user-message">
+        <div>
+          <i class="fa fa-user"></i>
+          <span>mohamed khalid</span>
+          <span>how are you ?? i'm just checking out ...</span>
+        </div>
+        <div>
+          <i class="fa fa-user"></i>
+          <span>fares mahmoud</span>
+          <span>this is an amazing phone isn't it ? ..</span>
+        </div>
+        <div>
+          <i class="fa fa-user"></i>
+          <span>osama mahamed</span>
+          <span>good job . keep going .</span>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="screen appscreen" id="apps-screen">
+      <nav class="app-nav">
+        <span onclick="showOptionList()"><i class="fa fa-ellipsis-v"></i></span>
+        <h3>applications</h3>
+      </nav>
+      <div class="options" id="options-list">
+        <ul>
+          <li><a href="https://codepen.io/collection/DjVwrw" target="_blank">JS tutorials</a></li>
+          <li><a href="https://codepen.io/collection/DqqEJW" target="_blank">advanced buttons</a></li>
+          <li><a href="https://codepen.io/collection/XQGgev" target="_blank">animations</a></li>
+          <li><a href="https://codepen.io/collection/XbBkBo" target="_blank">sliders</a></li>
+          <li><a href="https://codepen.io/collection/naBqmm" target="_blank">animated icons</a></li>
+        </ul>
+      </div>
+      <div class="app-slider">
+        <div class="applications"> 
+          <img src="https://troomobile.net/wp-content/uploads/2014/10/com_kk_wallpaper.png" alt="app">
+          
+          <img src="https://lh3.ggpht.com/VHziMBQavOxlYWS8TVBuFdTd7dYLIEmqZveX0uj2letWGoBBk8_reeEUAV79jJIHNx8=w300" alt="app">
+          
+          <img src="http://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Google-Drive-Sheets-icon.png" alt="app">
+          
+          <img src="http://beachmusicscene.com/gallery/image/gallery_image/7783/1280/_v=1480702407" alt="app">
+          
+          <img src="https://lh3.googleusercontent.com/UvZyV73jQTlBpKTFxsET-Kup0HIa-aM6rxEjdlYpmOI_xp0z-u-qsdFUkZV6QSq30ds=w300" alt="app">
+          
+          <img src="https://lh4.googleusercontent.com/1akRwIiJSj3dLbm6UoeoE5RPS5NwjeVvvcEHNiCow8BTPDlu7Q8hf7xe03enP9V7Z6he=w300" alt="app">
+          
+          <img src="https://png.icons8.com/google-maps/color/1600" alt="app">
+          
+          <img src="https://s1.mzstatic.com/us/r1000/082/Purple/v4/f8/b9/ab/f8b9abec-b366-e14e-a663-296572c739c7/mzl.wlniozle.png" alt="app">
+          
+          <img src="https://lh3.googleusercontent.com/IM3vVf3zSn0iFfT5hGh8IfyajTlRGCsesft9Wde4Xke4UlzUhv3TIO9TWxIrvgn9gRA=w300" alt="app">
+          
+          <img src="http://icons.iconarchive.com/icons/igh0zt/ios7-style-metro-ui/512/MetroUI-Apps-VisualStudio-2012-icon.png" alt="app">
+          
+          <img src="https://lh3.ggpht.com/g2a7VMDYz0WNIwVByyAY4vBy6GEoPcz64eXuHCLSVbyJo_IS7e8T3o5Myc7Iu50zLijL=w300" alt="app">
+          
+          <img src="http://valosohub.com/blog/wp-content/uploads/2017/04/unnamed.png" alt="app">
+          
+          <img src="https://lh3.googleusercontent.com/rYjMX1_gVeQhXuRGtFZLE7j2sQlPDCrtn_pEaPvgTW1RQXVUL6q5vrPh4-ZbWox2ag=w300" alt="app">
+          
+          <img src="http://www.freeiconspng.com/uploads/google-play-icon-3.png" alt="app">
+          
+        </div>
+        
+        <div class="applications"> 
+          
+          <img src="https://2013.raleigh.wordcamp.org/files/2013/11/Treehouse-Logo.png" alt="app">
+          
+          <img src="https://getwebcatalog.com/s3/5d1d7d32-aea4-4916-b2f3-83dfb348a21f.png" alt="app">
+          
+          <img src="http://1onjea25cyhx3uvxgs4vu325.wpengine.netdna-cdn.com/wp-content/themes/udacity_wp_1_8/images/udacity_mark.png" alt="app">
+          
+          <img src="http://beachmusicscene.com/gallery/image/gallery_image/7783/1280/_v=1480702407" alt="app">
+          
+          <img src="https://lh6.ggpht.com/k7Z4J1IIXXJnC2NRnFfJNlkn7kZge4Zx-Yv5uqYf4222tx74wXDzW24OvOxlcpw0KcQ=w300" alt="app">
+          
+          <img src="http://lh3.googleusercontent.com/qD8-o607KNvpYAzvRGEamVzvw1mlv7c7RkIKCfxyxmDUXot59qZq2LZvJXgFGV7mqCg" alt="app">
+          
+          <img src="http://www.seeicons.com/images/iconstore/512/seeicons__57a5dc135cb4a.png" alt="app">
+          
+          <img src="https://s1.mzstatic.com/us/r1000/082/Purple/v4/f8/b9/ab/f8b9abec-b366-e14e-a663-296572c739c7/mzl.wlniozle.png" alt="app">
+          
+          <img src="https://lh3.googleusercontent.com/N8kXaixBF8X2zPvXkuhE0VM_ewtphxl_yKQunGYQj9Czb0SoFZ_8dUYzCPV9vDnxPw=w300" alt="app">
+          
+          <img src="http://icons.iconarchive.com/icons/igh0zt/ios7-style-metro-ui/512/MetroUI-Apps-VisualStudio-2012-icon.png" alt="app">
+          
+          <img src="https://lh3.ggpht.com/g2a7VMDYz0WNIwVByyAY4vBy6GEoPcz64eXuHCLSVbyJo_IS7e8T3o5Myc7Iu50zLijL=w300" alt="app">
+          
+          <img src="http://lh3.googleusercontent.com/DglqS-eYHQYXnj8M8tmzh3JcKDXcidSo3IzgyCZzci8ZTV9Pmuk8vvIFh9XHOztC3Q=w300" alt="app">
+          
+          <img src="https://lh3.googleusercontent.com/sfp99b4JUXsyL7c5NJZimO3OTpxKzjS0l5_cv94ILCwejO7GtM7lXcaKbECaszak-6o=h300" alt="app">
+          
+          <img src="https://lh3.googleusercontent.com/EamensCSpActl8Y0uOxXOUSVHUBJOc4N3Lsp0OU0oMNBa9GU2JVmp1HWU9fyTWvMQQ=w300" alt="app">
+          
+          <img src="http://img.talkandroid.com/uploads/2016/01/BlackBerry_Camera_application_icon.png" alt="app">
+          
+          <img src="https://lh3.googleusercontent.com/66A56xKYesgzyOxjnldzNv-3eM9ACh6oDUP6bpFJT6a1tX0ppxq2LOElYhN5GIZE3g=w300" alt="app">
+          
+          <img src="http://www.freeiconspng.com/uploads/calculator-icon-1.png" alt="app">
+          
+          <img src="http://ineedfansnow.com/wp-content/uploads/2016/08/youtube-icon-app-logo-png-9-500x500.png" alt="app">
+          
+        </div>
+        
+        
+        <ul>
+          <li class="active slider"></li>
+          <li class="slider"></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="screen scrolldown" id="scroll-down-screen">
+      
+      <header>
+        <nav class="state-nav">
+          <div id="clock-three"></div>
+          <span><i class="fa fa-cog"></i></span>
+        </nav>
+        <div class="state-icons">
+          <div>
+            <i class="fa fa-wifi"></i>
+            <span>wi-fi</span>
+          </div>
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <span>gps</span>
+          </div>
+          <div>
+            <i class="fa fa-volume-up" id="sound-btn" onclick="changeSound()"></i>
+            <span>sound</span>
+          </div>
+          <div>
+            <i class="fa fa-bluetooth-b white-icon" id="blue" onclick="blueOn()"></i>
+            <span>blue</span>
+          </div>
+          <div>
+            <i class="fa fa-plane white-icon" id="plane-mode" onclick="planeModeOn()"></i>
+            <span>plane</span>
+          </div>
+        </div>
+      </header>
+      <div class="note">
+          <div>
+            <i class="fa fa-facebook"></i>
+            <h4>facebook</h4>
+            <p>you have won the game in .....</p>
+          </div>
+        <div>
+            <i class="fa fa-cogs"></i>
+            <h4>system</h4>
+            <p>you have no more space ne..</p>
+          </div>
+        </div>
+      <span id="close-scroll-screen"></span>
+    </div>
+    
+  </div>
+  <button id="open"></button>
+  <button id="back-btn"></button>
+ </div>
+  <div class="key" id="key">
+     <i class="fa fa-lock"></i>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

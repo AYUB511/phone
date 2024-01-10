@@ -1,0 +1,830 @@
+html{
+    height: 100%
+  }
+  
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  *{
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+      -webkit-user-select: none; 
+       -khtml-user-select: none; 
+         -moz-user-select: none; 
+          -ms-user-select: none; 
+              user-select: none; 
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .background{
+    height: 100%;
+    background: url("https://s-media-cache-ak0.pinimg.com/originals/58/5b/5a/585b5aac0ac12c6c4cc44f31234f422d.jpg");
+    background-size: 100% 100%;
+    filter: blur(3px);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .phone{
+    position: relative;
+    width: 320px;
+    margin: 20px auto;
+  }
+  
+  .phone img{
+    width: 100%
+  }
+  
+  .phone .screen-box{
+    position: absolute;
+    top: 68px;
+    left: 27px;
+    width: 264px;
+    height: 466px;
+    overflow: hidden;
+  }
+  
+  #nav-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    height: 20px;
+    font-size: 12px;
+    z-index: 19;
+    color: #fff;
+    padding: 0 5px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #nav-bar:hover{
+    background: rgba(0,0,0,.3);
+  }
+  
+  #nav-bar span{
+    display: block;
+    float: left;
+  }
+  
+  #nav-bar ul{
+    float: right;
+    margin: 0;
+  }
+  
+  #nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 2px;
+  }
+  
+  .phone .screen-box .screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    height: 101%;
+    border-radius: 2px;
+    transition: all 0.3s linear;
+  }
+  
+  
+  .phone .screen-box .scrolldown{
+    background: rgba(0,0,0,.7);
+    color: #fff;
+    z-index: 25;
+    top: -102%;
+  }
+  
+  
+  .phone .screen-box .scrolldown header{
+    background: #42A8DF;
+    padding: 15px 5px ;
+    z-index: 19;
+  }
+  
+  .phone .screen-box .scrolldown header nav{
+    overflow: hidden;
+    padding: 5px 0;
+    font-size: 22px;
+  }
+  .phone .screen-box .scrolldown header nav i{
+    float: left;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    transition: all 0.5s ease;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+  }
+  
+  .phone .screen-box .scrolldown header nav i:hover{
+    background: rgba(0,0,0,.3);
+  }
+  
+  .phone .screen-box .scrolldown header nav #clock-three{
+    float: right;
+    margin-top: 3px
+  }
+  
+  .phone .screen-box .scrolldown header .state-icons{
+    overflow: hidden;
+  }
+  
+  .phone .screen-box .scrolldown header .state-icons > div{
+    width: 20%;
+    float: left;
+    text-align: center;
+    padding: 5px 2px;
+    line-height: 30px
+  }
+  
+  .phone .screen-box .scrolldown header .state-icons > div i{
+    display: block;
+    font-size: 20px;
+    background: rgba(0,0,0,.5);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: auto;
+  }
+  
+  .white-icon{
+    color: #fff
+  }
+  
+  .green-icon{
+    color: #81E13F
+  }
+  
+  .phone .screen-box .scrolldown header .state-icons > div:first-of-type i,
+  .phone .screen-box .scrolldown header .state-icons > div:nth-of-type(3) i{
+    color: #81E13F
+  }
+  
+  .phone .screen-box .scrolldown .note > div{
+    position: relative;
+    padding: 1px 0 0 50px;
+    line-height: 5px;
+    cursor: pointer;
+    height: 50px;
+    transition: all 0.5s ease;
+  }
+  
+  .phone .screen-box .scrolldown .note > div h4{
+    margin: 8px 0
+  }
+  
+  .phone .screen-box .scrolldown .note > div p{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 14px
+  }
+  
+  .phone .screen-box .scrolldown .note > div:hover{
+    background: rgba(255,255,255,.4)
+  }
+  
+  .phone .screen-box .scrolldown .note > div i{
+    position: absolute;
+    left: 10px;
+    font-size: 30px;
+    top: 10px;
+  }
+  
+  .phone .screen-box .scrolldown > span{
+    display:block;
+    position: absolute;
+    bottom: 22px;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    cursor: pointer;
+  }
+  
+  .phone .screen-box .lock{
+    background: #000;
+    z-index: 20;
+  }
+  
+  .phone .screen-box .password{
+    background: url("https://s-media-cache-ak0.pinimg.com/736x/ab/d7/77/abd777cda8e05a95097ce3596bb80fa3--galaxy-wallpaper-iphone--wallpaper.jpg");
+    background-size: 100% 100%;
+    z-index: 18;
+    overflow: hidden;
+  }
+  
+  .phone .screen-box .password .clock{
+    color: #fff;
+    font-size: 60px;
+    margin: 40px 10px 5px;
+    position: relative;
+  }
+  
+  .phone .screen-box .password .date{
+    color: #fff;
+    font-size: 20px;
+    margin: 0 15px;
+    position: relative;
+  }
+  
+  #key{
+    color: #fff;
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 65px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    z-index: 19;
+    button: 150px
+  }
+  
+  #key:before{
+    content: "";
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    border: 20px solid rgba(255,255,255,.6);
+    border-radius: 50%;
+    position: absolute;
+    top: -22px;
+    left: -22px;
+    transition: all 0.5s ease;
+    opacity:0;
+    transform: scale(0,0)
+  }
+  
+  #key:after{
+    content: "";
+    color: #fff;
+    width: 108px;
+    height: 108px;
+    border: 20px solid rgba(255,255,255,0.4);
+    border-radius: 50%;
+    position: absolute;
+    top: -42px;
+    left: -41px;
+    transition: all 0.5s ease;
+    opacity:0;
+    transform: scale(0,0)
+  }
+  
+  #key:hover:after,
+  #key:hover:before{
+    opacity:1;
+    transform: scale(1,1)
+  }
+  
+  .phone #open{
+    position: absolute;
+    bottom: 30px;
+    left: 125px;
+    width: 70px;
+    height: 25px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  
+  .screen-box .lock-icons{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 38px;
+    padding: 5px;
+  }
+  
+  .screen-box .lock-icons span{
+    display: block;
+    border: 1px solid #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 55px;
+    text-align: center;
+    background: rgba(0,0,0,.4);
+    cursor: pointer;
+    float: left;
+  }
+  
+  .screen-box .lock-icons span:before{
+    content:"";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    left: -50px;
+    bottom: -50px;
+    z-index: -1;
+    transition: all 0.3s ease;
+    transform: scale(0,0);
+  }
+  
+  .screen-box .lock-icons span:first-child:hover:before{
+    transform: scale(1,1);
+  }
+  
+  .screen-box .lock-icons span:after{
+    content:"";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    right: -50px;
+    bottom: -50px;
+    z-index: -1;
+    transition: all 0.3s ease;
+    transform: scale(0,0);
+  }
+  
+  .screen-box .lock-icons span:last-child:hover:after{
+    transform: scale(1,1);
+  }
+  
+  .screen-box .lock-icons span:last-child{color: #ff0130;float:right}
+  
+  
+  .screen-box .home{
+    background: url("https://andro4u.com/wp-content/uploads/2014/10/com_androidfuture_wallpaper_attach_1.jpeg");
+    background-size: 100% 100%;
+    z-index: 17;
+  }
+  
+  .screen-box .home .main-info{
+    position: absolute;
+    top: 30px;
+    background: rgba(0,0,0,.2);
+    width: 98%;
+    height: 120px;
+    left: 1%;
+  }
+  
+  .screen-box .home .main-info .inner-clock{
+    color: #fff;
+    font-size: 50px;
+    width: 40%;
+  }
+  
+  .screen-box .home .main-info .inner-date{
+    color: #fff;
+    font-size: 23px;
+    text-align: right;
+    width: 40%;
+  }
+  
+  .screen-box .home .main-info .wether{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 30px;
+    width: 50%;
+    text-align: right;
+    padding: 5px
+  }
+  
+  .screen-box .home .main-info .wether i{
+    display: block;
+    margin: 20px 20px 0 0;
+    font-size: 50px;
+  }
+  
+  .screen-box .home .main-info .wether i:first-of-type{
+    position: absolute;
+    top: -10px;
+    left: 35px;
+    color: #FBBC05;
+  }
+  
+  .screen-box .home .main-info .wether i:last-of-type{
+    z-index: 2;
+    position: relative;
+  }
+  
+  .screen-box .home .main-info span{
+    position: relative;
+    right: 20px;
+    top: -5px
+  }
+  
+  .screen-box .home .apps{
+    position: absolute;
+    top: 230px;
+    
+  }
+  
+  .screen-box .home .apps ul{margin: 10px 0;padding: 0}
+  
+  .screen-box .home .apps ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 45px;
+    margin: 40px 12px 20px;
+    position: relative;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    width: 38px;
+  }
+  
+  .screen-box .home .apps ul li:hover{
+    transform: translateY(-5px)
+  }
+  
+  .screen-box .home .apps ul li:after{
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(0,0,0,.5);
+    bottom: 6px;
+    left: 8px
+  }
+  
+  .screen-box .home .fixed-app{
+    position: absolute;
+    bottom: 0;
+    top: auto;
+  }
+  
+  .screen-box .home .apps.fixed-app li{
+    width: 40px;
+    margin-left: 26px
+  }
+  
+  .screen-box .home .fixed-app ul li:after{
+    content: "";
+    display: none;
+  }
+  
+  .screen-box .home .fixed-app ul li:hover{
+    transform: none
+  }
+  
+  .screen-box .calls{
+    background: #fff;
+  }
+  
+  .screen-box .calls .call-nav{
+    background: #18a68e;
+    overflow:hidden;
+  }
+  
+  .screen-box .calls .call-nav input{
+    float: left;
+    margin: 30px 5px 10px;
+    width: 60%;
+    border: 0;
+    height: 30px;
+    padding: 5px;
+    border-radius: 2px;
+  }
+  
+  .screen-box .calls .call-nav ul{
+    float:right;
+    margin-top: 25px;
+    padding: 0;
+    width: 30%;
+  }
+  .screen-box .calls .call-nav ul li{
+    display: inline-block;
+    margin: 5px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .screen-box .calls .user-phone{
+    height: 84%;
+    color: #333
+  }
+  
+  .screen-box .calls .user-phone > div{
+    height: 60px;
+    position: relative;
+    font-size: 20px;
+    border-bottom: 1px solid #aaa;
+    padding-left: 50px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .screen-box .calls .user-phone > div:hover{
+    background: rgba(0,0,0,.5);
+  }
+  
+  .screen-box .calls .user-phone > div:before{
+    content: "call";
+    width: 100%;
+    height: 100%;
+    background: #8ae82c;
+    position: absolute;
+    left: -100%;
+    z-index: 5;
+    color: #fff;
+    text-align: right;
+    line-height: 60px;
+    padding-right: 10px;
+    font-weight: 700;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+  }
+  
+  .screen-box .calls .user-phone > div:active:before{
+    left: 0;
+  }
+  
+  .screen-box .calls .user-phone > div i{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 40px;
+  }
+  
+  .screen-box .calls .user-phone > div span:first-of-type{
+    font-size: 16px;
+    padding-left: 5px;
+    text-transform: capitalize;
+  }
+  
+  .screen-box .calls .user-phone > div:first-of-type i,
+  .screen-box .calls .user-phone > div:nth-of-type(4) i
+  {color: #C4AD9F}
+  
+  .screen-box .calls .user-phone > div:last-of-type i,
+  .screen-box .calls .user-phone > div:nth-of-type(2) i
+  {color: #8664BB}
+  
+  .phone #back-btn{
+    position: absolute;
+    bottom: 30px;
+    left: 220px;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  
+  /* ====================================== */
+  
+  .screen-box .messages{
+    background: #fff;
+  }
+  
+  .screen-box .messages .messages-nav{
+    background: #18a68e;
+    overflow:hidden;
+  }
+  
+  .screen-box .messages .messages-nav h3{
+    float: left;
+    margin: 30px 5px 10px;
+    width: 60%;
+    padding: 5px;
+    color: #fff;
+  }
+  
+  .screen-box .messages .messages-nav ul{
+    float:right;
+    margin-top: 25px;
+    padding: 0;
+    width: 30%;
+  }
+  .screen-box .messages .messages-nav ul li{
+    display: inline-block;
+    margin: 5px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .screen-box .messages .user-phone{
+    height: 84%;
+    color: #333
+  }
+  
+  .screen-box .messages .user-message > div{
+    height: 70px;
+    position: relative;
+    font-size: 20px;
+    border-bottom: 1px solid #aaa;
+    padding-left: 50px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .screen-box .messages .user-message > div:hover{
+    background: rgba(0,0,0,.5);
+  }
+  
+  .screen-box .messages .user-message > div:before{
+    content: "message";
+    width: 100%;
+    height: 100%;
+    background: #FFCB1F;
+    position: absolute;
+    left: -100%;
+    z-index: 5;
+    color: #fff;
+    text-align: right;
+    line-height: 60px;
+    padding-right: 10px;
+    font-weight: 700;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+  }
+  
+  .screen-box .messages .user-message > div:active:before{
+    left: 0;
+  }
+  
+  .screen-box .messages .user-message > div i{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 40px;
+  }
+  
+  .screen-box .messages .user-message > div span:first-of-type{
+    font-size: 16px;
+    text-transform: capitalize;
+    display: block;
+  }
+  
+  .screen-box .messages .user-message > div span:last-of-type{
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 6px 0 0 5px;
+    color: #aaa;
+  }
+  
+  .screen-box .messages .user-message > div:first-of-type i{color: #C4AD9F}
+  
+  .screen-box .messages .user-message > div:nth-of-type(2) i{color: #59A6C8}
+  
+  .screen-box .messages .user-message > div:nth-of-type(3) i{color: #9AB4B2}
+  
+  
+  
+  .phone #back-btn{
+    position: absolute;
+    bottom: 30px;
+    left: 220px;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  .phone .appscreen{
+    background: url("https://andro4u.com/wp-content/uploads/2014/10/com_androidfuture_wallpaper_attach_1.jpeg");
+    background-size: 100% 100%;
+    padding: 20px 0;
+    color: #fff;
+  }
+  
+  .phone .appscreen .app-nav{
+    overflow: hidden;
+    background: rgba(0,0,0,.2);
+    padding: 10px
+  }
+  
+  .phone .appscreen .app-nav span{
+    float: left;
+    display: inline-block;
+    width: 2%;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .phone .appscreen .app-nav h3{
+    float: left;
+    display: inline-block;
+    margin: 0;
+    margin-left: 50px;
+    text-transform: uppercase;
+  }
+  .phone .appscreen .options{
+    color: #333;
+    background: rgba(255,255,255,.7);
+    display: inline-block;
+    padding: 0;
+    border-radius: 0 7px 7px 0;
+    position: absolute;
+    width: 160px;
+    overflow: hidden;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition: all 0.5s ease;
+    z-index: 3
+  }
+  
+  .phone .appscreen .options ul{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .phone .appscreen .options li{
+    list-style: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 0 ;
+    padding: 5px;
+  }
+  
+  .phone .appscreen .options li:hover{
+    background: rgba(255,255,255,1);
+  }
+  
+  .phone .appscreen .app-slider{
+    height: 93.5%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .phone .appscreen .app-slider .applications{
+    width: 100%;
+    height: 92%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.6s ease;
+  }
+  
+  .phone .appscreen .app-slider .applications:last-of-type{
+    left: 100%;
+  }
+  
+  .phone .appscreen .app-slider .applications img{
+    width: 20%;
+    margin: 10px 2.5%;
+    float: left;
+    cursor: pointer;
+  }
+  
+  .phone .appscreen .app-slider > ul{
+    list-style: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    margin: 0;
+  }
+  
+  .phone .appscreen .app-slider > ul li{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .phone .appscreen .app-slider > ul li{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: rgba(255,255,255,.6);
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .phone .appscreen .app-slider > ul li:hover,
+  .phone .appscreen .app-slider > ul li.active{
+    transform: scale(1.1,1.1);
+    background: rgba(255,255,255,1);
+  }
